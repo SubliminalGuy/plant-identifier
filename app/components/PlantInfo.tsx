@@ -3,6 +3,7 @@ import Image from "next/image";
 import Table from "./common/Table";
 
 export default function PlantInfo({ info, imageUrl }: PlantInfoProps) {
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
       <div className="flex flex-col md:flex-row gap-8">
@@ -33,16 +34,17 @@ export default function PlantInfo({ info, imageUrl }: PlantInfoProps) {
       </div>
       <div className="mt-8">
         <h3 className="text-2xl font-semibold mb-4 text-green-600">
-          Care Instructions
+          Pflegeanleitung
         </h3>
         <p className="text-gray-700 leading-relaxed">{info.careInstructions}</p>
       </div>
+      { info.medicianValue &&
       <div className="mt-8">
         <h3 className="text-2xl font-semibold mb-4 text-green-600">
           Medicinal Value
         </h3>
         <p className="text-gray-700 leading-relaxed">{info.medicianValue}</p>
-      </div>
+      </div>}
     </div>
   );
 }

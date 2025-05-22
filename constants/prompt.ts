@@ -1,2 +1,2 @@
 export const PROMPT =
-  "Identify this plant and provide the following information in JSON format: Plant name, Scientific name, Plant family, Native region, Brief description, Care instructions, medicinal value.";
+  "Identifiziere diese Pflanze und gib mir deutschsprachige Informationen im JSON format zurück: Plant name, Scientific name, Plant family, Native region, Brief description, Care instructions, medicinal value.";

@@ -11,7 +11,7 @@ import { MODEL } from "@/constants/model";
 import { fileToGenerativePart } from "@/libs/generateFileAI";
 
 const genAI = new GoogleGenerativeAI(
-  process.env.NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY!
+  process.env.NEXT_PUBLIC_GOOGLE_API_KEY!
 );
 
 export default function ImageUpload({
@@ -27,6 +27,8 @@ export default function ImageUpload({
     if (!file) return;
 
     setLoading(true);
+
+    
 
     try {
       const imageUrl = URL.createObjectURL(file);
@@ -62,7 +64,7 @@ export default function ImageUpload({
           disabled={loading}
         >
           <Icons.uploadIcon />
-          Upload Image
+          Bild hochladen
         </button>
         <button
           onClick={() => cameraInputRef.current?.click()}
@@ -74,7 +76,7 @@ export default function ImageUpload({
           disabled={loading}
         >
           <Icons.cameraIcon />
-          Take Photo
+          Foto machen
         </button>
       </div>
       <input
