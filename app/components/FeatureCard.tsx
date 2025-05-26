@@ -28,18 +28,7 @@ const FeatureCard = () => {
             Our advanced AI analyzes the image to identify the plant species.
           </p>
         </div>
-        <div className="bg-gray-800 rounded-lg shadow-md p-6 text-center">
-          <div className="bg-green-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-            <Icons.InfoIcon className="w-8 h-8" />
-          </div>
-          <h3 className="text-xl font-semibold mb-2 text-white">
-            Get Information
-          </h3>
-          <p className="text-gray-300">
-            Receive detailed information about the plant, including its name,
-            scientific name, and characteristics.
-          </p>
-        </div>
+        
       </div>
     </div>
   );
