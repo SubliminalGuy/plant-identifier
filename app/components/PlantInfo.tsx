@@ -41,7 +41,7 @@ export default function PlantInfo({ info, imageUrl }: PlantInfoProps) {
       { info.medicianValue &&
       <div className="mt-8">
         <h3 className="text-2xl font-semibold mb-4 text-green-600">
-          Medicinal Value
+          Medizinischer Nutzen
         </h3>
         <p className="text-gray-700 leading-relaxed">{info.medicianValue}</p>
       </div>}

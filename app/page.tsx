@@ -24,7 +24,7 @@ export default function Home() {
         </p>
         <ImageUpload setPlantInfo={setPlantInfo} setImageUrl={setImageUrl} />
         {plantInfo && <PlantInfo info={plantInfo} imageUrl={imageUrl} />}
-        <FeatureCard />
+   
       </div>
       <Footer />
     </main>
